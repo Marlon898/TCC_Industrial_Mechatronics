@@ -1,0 +1,141 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004     @WRITE_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015-016 CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B-01C CCP_2
+01C     CCP_2_HIGH
+020-023 A0
+024-027 A1
+028-02B L2
+02C-02F L3
+030-033 P1
+034-037 @ADDFF.P1
+034-037 @FLT.P2
+034-035 @ITOF.P3
+034     lcd_ini.conta
+034     MAIN.@SCRATCH1
+035     @delay_ms2.P1
+035     lcd_ini.@SCRATCH1
+035     MAIN.@SCRATCH2
+036     MAIN.@SCRATCH3
+037-03A @PRINTF_L32D_72FPFPF.P1
+037     MAIN.@SCRATCH4
+038-03B @DIVFF.P1
+038-03B @ADDFF.P2
+038-03B @FLT.P3
+03B     @PRINTF_L32D_72FPFPF.P1
+03C-03F @DIVFF.P1
+03C     @FLT.@SCRATCH1
+03C     @ADDFF.@SCRATCH1
+03C     @PRINTF_L32D_72FPFPF.@SCRATCH1
+03D     @FLT.@SCRATCH2
+03D     @ADDFF.@SCRATCH2
+03D     @PRINTF_L32D_72FPFPF.@SCRATCH2
+03E     @ADDFF.@SCRATCH3
+03E     @PRINTF_L32D_72FPFPF.@SCRATCH3
+03F     @ADDFF.@SCRATCH4
+03F     @PRINTF_L32D_72FPFPF.@SCRATCH4
+040     @DIVFF.@SCRATCH1
+040     @ADDFF.@SCRATCH5
+040     @PRINTF_L32D_72FPFPF.@SCRATCH5
+041     @DIVFF.@SCRATCH2
+041     @ADDFF.@SCRATCH6
+041     @PRINTF_L32D_72FPFPF.@SCRATCH6
+042     @DIVFF.@SCRATCH3
+042     @ADDFF.@SCRATCH7
+042     @PRINTF_L32D_72FPFPF.@SCRATCH7
+043     @DIVFF.@SCRATCH4
+043     @ADDFF.@SCRATCH8
+043     @PRINTF_L32D_72FPFPF.@SCRATCH8
+044     lcd_escreve.c
+044-047 @FTOSD.P1
+044-047 @MULFF.P2
+044-047 @DIV3232.P3
+044     @DIVFF.@SCRATCH5
+045     @delay_ms1.P1
+045     lcd_pos_xy.x
+045     @DIVFF.@SCRATCH6
+046     lcd_pos_xy.y
+047     lcd_pos_xy.endereco
+048-04B @DIV3232.P1
+048-04B @MULFF.P2
+048     lcd_pos_xy.@SCRATCH1
+048     @FTOSD.@SCRATCH1
+049     lcd_envia_byte.endereco
+04A     lcd_envia_byte.dado
+04B     lcd_envia_byte.@SCRATCH1
+04C     lcd_envia_nibble.dado
+04C     @MULFF.@SCRATCH1
+04C     @DIV3232.@SCRATCH1
+04D     @MULFF.@SCRATCH2
+04D     @DIV3232.@SCRATCH2
+04E     @MULFF.@SCRATCH3
+04E     @DIV3232.@SCRATCH3
+04F     @MULFF.@SCRATCH4
+04F     @DIV3232.@SCRATCH4
+050     @MULFF.@SCRATCH5
+050     @DIV3232.@SCRATCH5
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07B     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+003A  @delay_ms1
+0004  INI_LCD
+0048  lcd_envia_nibble
+006F  lcd_envia_byte
+0090  lcd_ini
+00CD  lcd_pos_xy
+03CB  lcd_escreve
+00DF  @delay_ms2
+0800  MAIN
+00ED  @ITOF
+010A  @MULFF
+017F  @DIVFF
+0249  @FLT
+028A  @ADDFF
+000C  @const103
+045C  @FTOSD
+03F3  @DIV3232
+0435  @PRINTF_L32D_72FPFPF
+0800  @cinit
+
+Project Directory:
+    C:\Users\Marlon H. Tavares\Google Drive\CIRCUITOS\CORRENTE CONTINUA - M1\ULTIMA VERSÃO\
+
+Project Files:
+    cc_FINAL_V3.c
+    ..\..\..\..\..\..\Program Files\PICC\devices\16f877A.h
+    ..\..\..\..\..\..\Program Files\PICC\drivers\mod_lcd.c
+
+Units:
+    C:\Users\Marlon H. Tavares\Google Drive\CIRCUITOS\CORRENTE CONTINUA - M1\ULTIMA VERSÃO\cc_FINAL_V3.c (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      cc_FINAL_V3.err
+    Ext Symbols: cc_FINAL_V3.esym
+    INHX8:       cc_FINAL_V3.hex
+    Symbols:     cc_FINAL_V3.sym
+    List:        cc_FINAL_V3.lst
+    Debug/COFF:  cc_FINAL_V3.cof
+    Project:     cc_FINAL_V3.PJT
+    Call Tree:   cc_FINAL_V3.tre
+    Statistics:  cc_FINAL_V3.sta
