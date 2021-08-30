@@ -1,0 +1,117 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004     @WRITE_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015-016 CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B-01C CCP_2
+01C     CCP_2_HIGH
+020     temp_in
+021     temp_set
+022     histerese
+023     A0
+024     A1
+025     A3
+026-029 @DIVFF.P1
+026     @delay_ms2.P2
+026-027 @ITOF.P3
+026     lcd_ini.conta
+026     MAIN.@SCRATCH1
+027     lcd_ini.@SCRATCH1
+027     MAIN.@SCRATCH2
+028     MAIN.@SCRATCH3
+029     @PRINTF_U_72.P1
+029     MAIN.@SCRATCH4
+02A-02D @ADDFF.P1
+02A-02D @DIVFF.P2
+02A-02D @SFTOI.P3
+02A     @PRINTF_U_72.P4
+02B     lcd_escreve.c
+02B     @DIV88.P1
+02C     lcd_pos_xy.x
+02C     @delay_ms1.P1
+02C     @DIV88.P2
+02D     lcd_pos_xy.y
+02D     @DIV88.@SCRATCH1
+02E     lcd_pos_xy.endereco
+02E-031 @ADDFF.P1
+02E     @DIVFF.@SCRATCH1
+02F     lcd_pos_xy.@SCRATCH1
+02F     @DIVFF.@SCRATCH2
+030     lcd_envia_byte.endereco
+030     @DIVFF.@SCRATCH3
+031     lcd_envia_byte.dado
+031     @DIVFF.@SCRATCH4
+032     lcd_envia_byte.@SCRATCH1
+032     @DIVFF.@SCRATCH5
+032     @ADDFF.@SCRATCH1
+033     lcd_envia_nibble.dado
+033     @DIVFF.@SCRATCH6
+033     @ADDFF.@SCRATCH2
+034     @ADDFF.@SCRATCH3
+035     @ADDFF.@SCRATCH4
+036     @ADDFF.@SCRATCH5
+037     @ADDFF.@SCRATCH6
+038     @ADDFF.@SCRATCH7
+039     @ADDFF.@SCRATCH8
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07B     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+0051  @delay_ms1
+0004  INI_LCD
+005F  lcd_envia_nibble
+0086  lcd_envia_byte
+00A7  lcd_ini
+00E4  lcd_pos_xy
+0360  lcd_escreve
+00F6  @delay_ms2
+03BD  MAIN
+0104  @ITOF
+0121  @DIVFF
+01EB  @SFTOI
+020A  @ADDFF
+034B  @DIV88
+000C  @const103
+0388  @PRINTF_U_72
+002E  @const108
+03BD  @cinit
+
+Project Directory:
+    C:\Users\marlon\Desktop\PROJETO - X\Nova pasta\
+
+Project Files:
+    CONTROLE.c
+    ..\..\..\..\..\Program Files\PICC\devices\16f877A.h
+    ..\..\..\..\..\Program Files\PICC\drivers\mod_lcd.c
+
+Units:
+    C:\Users\marlon\Desktop\PROJETO - X\Nova pasta\CONTROLE.c (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      CONTROLE.err
+    Ext Symbols: CONTROLE.esym
+    INHX8:       CONTROLE.hex
+    Symbols:     CONTROLE.sym
+    List:        CONTROLE.lst
+    Debug/COFF:  CONTROLE.cof
+    Project:     CONTROLE.PJT
+    Call Tree:   CONTROLE.tre
+    Statistics:  CONTROLE.sta
